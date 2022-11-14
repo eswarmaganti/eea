@@ -1,12 +1,16 @@
 import React from "react";
 import { Navbar } from "..";
 import { Outlet } from "react-router-dom";
+import Footer from "../Footer";
 
 const LayoutContainer = () => {
   return (
-    <main className="px-12">
+    <main>
       <Navbar />
-      <Outlet />
+      <section className="px-12">
+        <Outlet />
+      </section>
+      <Footer />
     </main>
   );
 };

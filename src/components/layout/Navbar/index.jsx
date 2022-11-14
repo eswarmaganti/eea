@@ -7,6 +7,9 @@ import {
   faArrowRightToBracket,
   faPhone,
   faChurch,
+  faImage,
+  faCalendarDay,
+  faCircleInfo,
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 
@@ -17,9 +20,24 @@ const NavbarLinks = [
     icon: <FontAwesomeIcon icon={faHome} />,
   },
   {
+    link: "/worship-services",
+    linkText: "Worship Services",
+    icon: <FontAwesomeIcon icon={faCircleInfo} />,
+  },
+  {
+    link: "/events",
+    linkText: "events",
+    icon: <FontAwesomeIcon icon={faCalendarDay} />,
+  },
+  {
     link: "/contact",
     linkText: "Contact",
     icon: <FontAwesomeIcon icon={faPhone} />,
+  },
+  {
+    link: "/gallary",
+    linkText: "Gallary",
+    icon: <FontAwesomeIcon icon={faImage} />,
   },
   {
     link: "/login",
@@ -61,7 +79,7 @@ const NavbarLink = ({ item }) => {
     >
       <li>
         {item.icon}
-        <span>{item.linkText}</span>
+        <span className="capitalize">{item.linkText}</span>
       </li>
     </NavLink>
   );

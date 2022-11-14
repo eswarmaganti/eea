@@ -1,5 +1,5 @@
 .navbar {
-  @apply flex items-center justify-between h-[60px];
+  @apply flex items-center justify-between h-[60px] shadow px-12 border-b;
 
   .brand {
     @apply flex items-center gap-2;
