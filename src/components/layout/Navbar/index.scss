@@ -1,0 +1,29 @@
+.navbar {
+  @apply flex items-center justify-between h-[60px];
+
+  .brand {
+    @apply flex items-center gap-2;
+    .logo-head {
+      @apply text-xl font-bold tracking-[.35rem] uppercase text-rose-600;
+    }
+    .logo-subhead {
+      @apply text-sm font-semibold leading-none;
+    }
+  }
+  .navbar-nav {
+    @apply flex items-center justify-between gap-6;
+
+    .link {
+      @apply text-sm  font-semibold leading-none hover:text-rose-600 duration-200 ease-out;
+      li {
+        @apply flex items-center gap-1;
+      }
+    }
+    .unactive-link {
+      @apply text-slate-800;
+    }
+    .active-link {
+      @apply text-red-600;
+    }
+  }
+}
