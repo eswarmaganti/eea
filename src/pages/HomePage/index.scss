@@ -1,0 +1,16 @@
+.homepage {
+  @apply flex items-center justify-center flex-col h-[580px];
+
+  .greeting {
+    @apply uppercase tracking-wider font-semibold;
+  }
+  .hero-text-wrapper {
+    @apply text-center mt-5 my-10;
+    .hero-head {
+      @apply text-8xl tracking-widest font-montserrat font-bold uppercase text-rose-600;
+    }
+    .hero-subhead {
+      @apply text-3xl tracking-wide text-slate-800 font-montserrat uppercase;
+    }
+  }
+}

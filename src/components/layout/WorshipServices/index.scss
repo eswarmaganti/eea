@@ -1,0 +1,49 @@
+.worship-timeline-container {
+  @apply flex flex-col relative mt-6;
+
+  &::after {
+    @apply absolute bg-rose-600 content-[''] w-1 h-full left-1/2 rounded;
+  }
+  .timeline-item {
+    @apply flex justify-end  pr-10 w-1/2 relative text-right odd:justify-start odd:self-end odd:pl-10 odd:pr-0 odd:text-left;
+
+    &::before {
+      @apply absolute content-[''] h-4 w-4 bg-white border-4 border-rose-600 top-1/2 -translate-y-[10px]  z-10 rounded-full;
+    }
+
+    &:nth-child(odd)::before {
+      @apply -left-1.5;
+    }
+    &:nth-child(even)::before {
+      @apply -right-2.5;
+    }
+    .timeline-item-content {
+      @apply relative shadow border-2 border-rose-100 p-5 bg-rose-100  rounded w-2/3 duration-150 ease-out hover:shadow-lg;
+
+      &::after {
+        @apply content-[''] absolute w-0 h-0 border-r-[.7rem] border-r-rose-100 border-b-[.7rem] border-l-[.7rem] border-t-[.7rem]  border-transparent top-1/2 -translate-y-[.75rem];
+      }
+
+      .timeline-title {
+        @apply font-semibold text-sm font-montserrat uppercase bg-rose-600 inline-block py-1 px-2 rounded text-white;
+      }
+      .details {
+        @apply flex gap-4;
+        .detail-item {
+          @apply flex gap-1 items-center text-xs font-semibold;
+        }
+      }
+    }
+
+    &:nth-child(even) .timeline-item-content::after {
+      @apply -right-[1.5rem] rotate-180;
+    }
+    &:nth-child(odd) .timeline-item-content::after {
+      @apply -left-[1.5rem];
+    }
+
+    &:nth-child(even) .timeline-item-content .details {
+      @apply justify-end;
+    }
+  }
+}

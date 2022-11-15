@@ -5,6 +5,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       sans: ["Comfortaa", "cursive"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
   },
   plugins: [],
