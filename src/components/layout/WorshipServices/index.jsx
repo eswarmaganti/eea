@@ -46,7 +46,7 @@ const worshipTimelineData = [
 
 const WorshipServices = () => {
   return (
-    <section className="my-4">
+    <section className="my-4" id="worship-services">
       <Title title="Worship Services" />
       <div className="worship-timeline-container">
         {worshipTimelineData.map((item) => (

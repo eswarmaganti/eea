@@ -14,7 +14,7 @@
     @apply flex items-center justify-between gap-6;
 
     .link {
-      @apply text-sm  font-semibold leading-none hover:text-rose-600 duration-200 ease-out;
+      @apply cursor-pointer text-sm  font-semibold leading-none hover:text-rose-600 duration-200 ease-out;
       li {
         @apply flex items-center gap-1;
       }

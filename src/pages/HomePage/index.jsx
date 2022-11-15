@@ -2,12 +2,13 @@ import React from "react";
 
 import "./index.scss";
 import TypeWriter from "typewriter-effect";
-import { WorshipServices } from "../../components/layout";
+import { SummaryCountUp, WorshipServices } from "../../components/layout";
+import ContactSection from "../../components/ContactSection";
 
 const HomePage = () => {
   return (
     <>
-      <div className="homepage">
+      <div className="homepage" id="homepage">
         <h3 className="greeting">WELCOME</h3>
         <div className="hero-text-wrapper">
           <h1 className="hero-head">Emmanuel</h1>
@@ -24,8 +25,11 @@ const HomePage = () => {
             loop: true,
           }}
         />
+
+        <SummaryCountUp />
       </div>
       <WorshipServices />
+      <ContactSection />
     </>
   );
 };
