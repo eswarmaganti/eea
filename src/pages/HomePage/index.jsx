@@ -2,12 +2,18 @@ import React from "react";
 
 import "./index.scss";
 import TypeWriter from "typewriter-effect";
-import { SummaryCountUp, WorshipServices } from "../../components/layout";
+import {
+  Navbar,
+  SummaryCountUp,
+  WorshipServices,
+  Footer,
+} from "../../components/layout";
 import ContactSection from "../../components/ContactSection";
 
 const HomePage = () => {
   return (
-    <>
+    <main>
+      <Navbar />
       <div className="homepage" id="homepage">
         <h3 className="greeting">WELCOME</h3>
         <div className="hero-text-wrapper">
@@ -30,7 +36,8 @@ const HomePage = () => {
       </div>
       <WorshipServices />
       <ContactSection />
-    </>
+      <Footer />
+    </main>
   );
 };
 
